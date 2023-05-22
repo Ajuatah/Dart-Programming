@@ -1,4 +1,6 @@
 import '../lib/NumberSwapper.dart';
+import 'dart:io';
+import '..//lib/Rectangle.dart';
 
 void main(List<String> arguments) {
   print("    **     **    ");
@@ -29,4 +31,18 @@ void main(List<String> arguments) {
     print("num1 = ${swapper.a}");
     print("num2 = ${swapper.b}");
   }
+
+  //rectagele class
+  print('Enter the length of the rectangle:');
+  double length = double.parse(stdin.readLineSync()!);
+
+  print('Enter the width of the rectangle:');
+  double width = double.parse(stdin.readLineSync()!);
+
+  Rectangle myRectangle = Rectangle(length, width);
+  double area = myRectangle.getArea();
+  double perimeter = myRectangle.getPerimeter();
+
+  print('Area: $area');
+  print('Perimeter: $perimeter');
 }
