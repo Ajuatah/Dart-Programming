@@ -1,6 +1,6 @@
 void main() {
   // Prompt the user for the length of the sequence
-  var n = 10;g
+  var n = 10;
 
   // Initialize the first two terms
   var a = 0;
