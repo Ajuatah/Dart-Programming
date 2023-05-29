@@ -1,5 +1,7 @@
 import '../lib/NumberSwapper.dart';
 import 'dart:math';
+import 'package:dart_fundamentals/OOPs/Car.dart';
+import 'package:dart_fundamentals/OOPs/Garage.dart';
 
 void main(List<String> arguments) {
   print("    **     **    ");
@@ -51,4 +53,20 @@ void main(List<String> arguments) {
   } else {
     print("The quadratic equation has no real solutions.");
   }
+
+  // Creating car objects
+  var car1 = Car('Tesla', 'Red', 2022);
+  var car2 = Car('Toyota', 'Blue', 2019);
+  var car3 = Car('BMW', 'Black', 2020);
+
+  // Creating a garage object
+  var garage = Garage();
+
+  // Adding cars to the garage
+  garage.addCar(car1);
+  garage.addCar(car2);
+  garage.addCar(car3);
+
+  // Displaying all cars in the garage
+  garage.displayCars();
 }
