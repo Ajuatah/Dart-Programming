@@ -6,3 +6,8 @@ Map<String, int> studentGrades = {
   'Bob': 87,
   'Emily': 92,
 };
+
+// Creating a map using the fromIterable() method
+List<String> names = ['John', 'Alice', 'Bob', 'Emily'];
+Map<String, int> studentGrades1 =
+    Map.fromIterable(names, key: (name) => name, value: (_) => 0);
