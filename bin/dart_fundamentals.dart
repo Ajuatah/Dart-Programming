@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:dart_fundamentals/OOPs/Car.dart';
 import 'package:dart_fundamentals/OOPs/Garage.dart';
 import 'package:dart_fundamentals/part one/student_grades.dart';
+import 'package:dart_fundamentals/part one/array_operations.dart';
 
 void main(List<String> arguments) {
   print("    **     **    ");
@@ -107,4 +108,14 @@ void main(List<String> arguments) {
   // Clearing the map
   studentGrades.clear();
   print('Cleared map: ${studentGrades.isEmpty}');
+
+  // working with arrays
+  // Calling the array operations function
+  List<String> updatedFruits = performArrayOperations();
+
+  // Iterating over the updated array
+  print('Updated Fruits:');
+  for (String fruit in updatedFruits) {
+    print(fruit);
+  }
 }
