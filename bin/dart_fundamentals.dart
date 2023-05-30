@@ -1,3 +1,5 @@
+import 'package:dart_fundamentals/part%20one/matrix_operations.dart';
+
 import '../lib/NumberSwapper.dart';
 import 'dart:math';
 import 'package:dart_fundamentals/OOPs/Car.dart';
@@ -117,5 +119,16 @@ void main(List<String> arguments) {
   print('Updated Fruits:');
   for (String fruit in updatedFruits) {
     print(fruit);
+  }
+
+  // Calling the matrix operations function
+  List<List<int>> updatedMatrix = performMatrixOperations();
+
+  // Iterating over the updated matrix
+  print('Updated Matrix:');
+  for (List<int> row in updatedMatrix) {
+    for (int element in row) {
+      print(element);
+    }
   }
 }
