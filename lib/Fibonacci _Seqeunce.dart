@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+void main() {/*
+Map <String, int>age={
+  'john':30,
+  'mary':25,
+  'Bob':40,
+}*/
+var details = {'username':'tom','password':'pass@123'};
+details['uid'] = 'u1oo1';
+print(details);
+}
+=======
 void main() {
   // Prompt the user for the length of the sequence
   var n = 10;
@@ -14,3 +26,4 @@ void main() {
     b = c;
   }
 }
+>>>>>>> 20a08c55a2a751e80d958f1705a69891258315b1
